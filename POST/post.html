@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SMS</title>
+	<link rel="stylesheet" type="text/css" href="post.css">
+</head>
+<body onclick="change()">
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname1" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava1" list="name" placeholder="Ава">
+		<textarea name="" id="Itext1" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg1" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname2" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava2" list="name" placeholder="Ава">
+		<textarea name="" id="Itext2" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg2" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname3" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava3" list="name" placeholder="Ава">
+		<textarea name="" id="Itext3" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg3" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname4" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava4" list="name" placeholder="Ава">
+		<textarea name="" id="Itext4" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg4" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname5" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava5" list="name" placeholder="Ава">
+		<textarea name="" id="Itext5" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg5" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname6" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava6" list="name" placeholder="Ава">
+		<textarea name="" id="Itext6" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg6" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname7" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava7" list="name" placeholder="Ава">
+		<textarea name="" id="Itext7" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg7" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname8" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava8" list="name" placeholder="Ава">
+		<textarea name="" id="Itext8" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg8" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname9" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava9" list="name" placeholder="Ава">
+		<textarea name="" id="Itext9" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg9" placeholder="Картинка">
+	</div>
+	<div class="folder">
+		<input type="text" onchange="change()" id="Iname10" list="name" placeholder="Имя">
+		<input type="text" onchange="change()" id="Iava10" list="name" placeholder="Ава">
+		<textarea name="" id="Itext10" cols="30" rows="1" onchange="change()" placeholder="Текст"></textarea>
+		<input type="text" onchange="change()" id="Iimg10" placeholder="Картинка">
+	</div>
+	<canvas id="canvas"></canvas>
+	<a href="../index.html" class="green">НА ГЛАВНУЮ</a>
+	<div class="invisible">
+		<p id="name1"></p>
+		<p id="name2"></p>
+		<p id="name3"></p>
+		<p id="name4"></p>
+		<p id="name5"></p>
+		<p id="name6"></p>
+		<p id="name7"></p>
+		<p id="name8"></p>
+		<p id="name9"></p>
+		<p id="name10"></p>
+	</div>
+	<div class="invisible">
+		<img src="" alt="" id="ava1">
+		<img src="" alt="" id="ava2">
+		<img src="" alt="" id="ava3">
+		<img src="" alt="" id="ava4">
+		<img src="" alt="" id="ava5">
+		<img src="" alt="" id="ava6">
+		<img src="" alt="" id="ava7">
+		<img src="" alt="" id="ava8">
+		<img src="" alt="" id="ava9">
+		<img src="" alt="" id="ava10">
+	</div>
+	<div class="invisible">
+		<p id="text1"></p>
+		<p id="text2"></p>
+		<p id="text3"></p>
+		<p id="text4"></p>
+		<p id="text5"></p>
+		<p id="text6"></p>
+		<p id="text7"></p>
+		<p id="text8"></p>
+		<p id="text9"></p>
+		<p id="text10"></p>
+	</div>
+	<div class="invisible">
+		<img src="" alt="" id="img1">
+		<img src="" alt="" id="img2">
+		<img src="" alt="" id="img3">
+		<img src="" alt="" id="img4">
+		<img src="" alt="" id="img5">
+		<img src="" alt="" id="img6">
+		<img src="" alt="" id="img7">
+		<img src="" alt="" id="img8">
+		<img src="" alt="" id="img9">
+		<img src="" alt="" id="img10">
+	</div>
+	<div class="invisible">
+		<p id="date"></p>
+		<p id="height">1000</p>
+		<p id="z">-30</p>
+		<datalist id="name">
+		  	<option value="Бэтмен">
+			<option value="Супермен">
+			<option value="Флэш">
+			<option value="Чудо-женщина">
+			<option value="Аквамен">
+			<option value="Найтвинг">
+	</datalist>
+	</div>
+	<script src="post.js"></script>
+</body>
+</html>

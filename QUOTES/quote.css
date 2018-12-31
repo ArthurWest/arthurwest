@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.row {
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	background-color: lightgray;
+}
+.inp {
+	flex-basis: 50%;
+	border-radius: .7rem;
+	padding: .7rem;
+	border: .1rem solid #1ad1ff;
+	margin: .3rem;
+	box-shadow: .1rem .1rem .2rem black,
+				.1rem .1rem .2rem black inset;
+}
+.inp button {
+	padding: .7rem;
+	border: .1rem solid lightgray;
+	border-radius: 2rem;
+	box-shadow: .1rem .1rem .5rem black;
+	font-size: 1.2rem;
+	color: white;
+	text-shadow: .08rem .08rem black;
+	margin-right: 1rem;
+}
+button[disabled] {
+	color: rgba(0, 0, 0, 0);;
+	cursor: no-drop;
+	text-shadow: none;
+}
+.inputs {
+	padding: 1rem;
+}
+.message {
+	display: flex;
+	border-top: 1.5rem solid rgb(0, 153, 51);
+	border-radius: 1rem;
+	padding: .1rem;
+	margin-top: .3rem;
+	position: relative;
+}
+.message > textarea {
+	flex-basis: 50%;
+}
+.message > a {
+	background-color: white;
+	border: .1rem solid lightgray;
+	margin: .1rem;
+	text-decoration: none;
+	padding: .1rem;
+	color: #595959;
+}
+.message > .inputFile {
+	display: none;
+}
+.message::before {
+	padding: 1rem;
+	content: "";
+    position: absolute;
+    background-color: yellow;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    z-index: -1;
+} 
+.imgHolder, .textholder {
+	display: none;
+}

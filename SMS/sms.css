@@ -1,0 +1,13 @@
+@font-face { font-family: San Francisco; src: url('9651.ttf'); } 
+.container {
+	display: flex;
+}
+.container textarea {
+	margin: 1rem;
+}
+.container input {
+	font-size: 1rem;
+}
+.check {
+	padding: 1rem; !important
+}

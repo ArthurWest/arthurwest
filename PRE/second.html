@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  	<title>PREVIEW</title>
+  	<link rel="stylesheet" type="text/css" href="second.css"/>
+    <link rel="shortcut icon" href="https://png.icons8.com/color/1600/flash-on.png" type="image/png">
+  </head>
+  <body>
+    <div class="block">
+      <input type="number" min="1" max="7" id="num" onchange="go()" value="1" class="input">
+      <input type="text" id="url" onchange="url()" placeholder="Ссылка на фото" name="url" class="input" value="x.jpg">
+      <button onclick="onAdv()" class="green">РАЗШИРЕННЫЕ ФУНКЦИИ</button>
+      <a href="../index.html" class="green">ОСНОВНОЙ САЙТ</a> <br>
+      <div id="div" style="display: none;">
+        <input type="text" id="Itext" placeholder="Текст" onchange="change()" class="input">
+        <input type="number" id="Ifont" value="150" placeholder="Размер" onchange="change()" class="input">
+        <input type="color" id="Icolor" value="#ffbf00" onchange="change()" class="input">
+        <input type="number" id="Iy" value="550" placeholder="Высота" onchange="change()" class="input">
+        <input type="number" id="Ishadow" value="5" placeholder="Тень" onchange="change()" class="input">
+      </div>
+      <div style="display: none;">
+        <p id="text"></p>
+        <p id="font"></p>
+        <p id="color"></p>
+        <p id="y"></p>
+        <p id="shadow"></p>
+      </div>
+      <!-- Само изображение -->
+      <canvas height="720" width="1280" id="dcCan">ТВОЙ БРАУЗЕР(УСТРОЙСТВО) НЕ ПОДДЕРЖИВАЕТ CANVAS</canvas>
+    </div>
+    <!-- Источники наложения изображений -->
+    <div style="display: none;">
+      <img src="0.png" alt="" id="clear">
+      <img src="x.png" id="photo">
+      <img src="../data/images/криптон.png" alt="КРИПТОН" id="krypton">
+      <img src="../data/images/лзд.png" alt="КРИПТОН" id="lzd">
+      <img src="../data/images/ривердейл.png" alt="КРИПТОН" id="river">
+      <img src="../data/images/стрела.png" alt="КРИПТОН" id="arrow">
+      <img src="../data/images/супергёрл.png" alt="КРИПТОН" id="supergirl">
+      <img src="../data/images/флэш.png" alt="КРИПТОН" id="flash">
+      <img src="../data/images/чм.png" alt="КРИПТОН" id="bl">
+    </div>
+    <a href=""></a>
+    <script type="text/javascript" src="second.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ЦИТАТЫ</title>
+	<link rel="stylesheet" href="quote.css">
+</head>
+<body id="body">
+	<div class="row">
+			<div class="inp">
+				<button onclick="buttonGo(0)">1</button>
+				<button disabled>2</button>
+				<button disabled>3</button>
+				<button disabled>4</button>
+			</div>
+			<div class="inp">
+				<button onclick="buttonGo(4)">1</button>
+				<button onclick="buttonGo(5)">2</button>
+				<button disabled>3</button>
+				<button disabled>4</button>
+			</div>
+	</div>
+	<div class="row">
+			<div class="inp">
+				<button onclick="buttonGo(8)">1</button>
+				<button onclick="buttonGo(9)">2</button>
+				<button onclick="buttonGo(10)">3</button>
+				<button disabled>4</button>
+			</div>
+			<div class="inp">
+				<button onclick="buttonGo(12)">1</button>
+				<button onclick="buttonGo(13)">2</button>
+				<button onclick="buttonGo(14)">3</button>
+				<button onclick="buttonGo(15)">4</button>
+			</div>
+	</div>
+	<div class="inputs">
+		<div class="message">
+			<input type="text" placeholder="Фотография(ссылка)" class="Iimg">
+			<a href="#" onclick="fileLoad(0)">Загрузить фотографию</a>
+			<input type="file" onchange="handle(this.files, 0)" class="inputFile">
+			<textarea type="text" placeholder="Текст" class="Itext"></textarea>
+			<input type="number" id="number1" onchange="canvas()" value="320" placeholder="Сдвиг">
+		</div>
+		<div class="message">
+			<input type="text" placeholder="Фотография(ссылка)" class="Iimg">
+			<a href="#" onclick="fileLoad(1)">Загрузить фотографию</a>
+			<input type="file" onchange="handle(this.files, 1)" class="inputFile">
+			<textarea type="text" placeholder="Текст" class="Itext"></textarea>
+			<input type="number" id="number2" onchange="canvas()" value="320" placeholder="Сдвиг">
+		</div>
+		<div class="message">
+			<input type="text" placeholder="Фотография(ссылка)" class="Iimg">
+			<a href="#" onclick="fileLoad(2)">Загрузить фотографию</a>
+			<input type="file" onchange="handle(this.files, 2)" class="inputFile">
+			<textarea type="text" placeholder="Текст" class="Itext"></textarea>
+			<input type="number" id="number3" onchange="canvas()" value="320" placeholder="Сдвиг">
+			
+		</div>
+		<div class="message">
+			<input type="text" placeholder="Фотография(ссылка)" class="Iimg">
+			<a href="#" onclick="fileLoad(3)">Загрузить фотографию</a>
+			<input type="file" onchange="handle(this.files, 3)" class="inputFile">
+			<textarea type="text" placeholder="Текст" class="Itext"></textarea>
+			<input type="number" id="number4" onchange="canvas()" value="320" placeholder="Сдвиг">
+		</div>
+	</div>
+	<div class="imgHolder">
+		<img src="1.jpg" alt="" class="imgs">
+		<img src="2.jpg" alt="" class="imgs">
+		<img src="3.jpg" alt="" class="imgs">
+		<img src="4.jpg" alt="" class="imgs">
+	</div>
+	<div class="textholder">
+		<p id="text1" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi beatae deleniti voluptatem commodi odio, corporis expedita accusamus. Cum soluta repudiandae quam illum, error deleniti voluptatibus.</p>
+		<p id="text2" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt nulla ex porro eaque dolore error blanditiis dolorem quasi, repellendus consequuntur, vel possimus!</p>
+		<p id="text3" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repudiandae velit accusamus illum maiores voluptatibus voluptates, quibusdam laboriosam officiis repellat iure rem, voluptatem doloribus? Illum.</p>
+		<p id="text4" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi in tempora, repudiandae praesentium, molestias quisquam, voluptates incidunt iure dicta ipsa eaque unde suscipit quia.</p>
+	</div>
+	<canvas id="canvas"></canvas>
+	<script src="quote.js"></script>
+</html>
