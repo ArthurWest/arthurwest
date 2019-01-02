@@ -20,7 +20,8 @@ for (let i = 0; i < help.length; i++) {
 }
 //Links
 let links = [
-	'QUOTES/quote.html'
+	'QUOTES/quote.html',
+	'FACTNEWS/factnews.html'
 ]
 for (let i = 0; i < go.length; i++) {
 	go[i].setAttribute('number', i);
