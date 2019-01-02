@@ -1,0 +1,67 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+@font-face { font-family: Lays; src: url('1.ttf'); } 
+#inputs {
+	margin-top: 1rem;
+	background-color: #17a2b8;
+	padding: 1rem;
+	display: flex;
+	border: .3rem yellow;
+	flex-wrap: wrap;
+	margin: 0px;
+}
+#inputs > input[type=file] {
+	display: none;
+}
+#inputs > a {
+	background-color: white;
+    border: .1rem solid lightgray;
+    margin: .1rem;
+    text-decoration: none;
+    padding: .1rem;
+    color: #595959;
+    cursor: pointer;
+}
+#inputs > #url {
+	flex-basis: 20%;
+}
+#inputs > #upload {
+	flex-basis: 10%;
+}
+#inputs > #title {
+	flex-basis: 20%;
+}
+#inputs > textarea {
+	flex-basis: 50%;
+}
+#linkCon {
+	text-align: center;
+	margin: 1rem;
+}
+#goBack {
+	color: white;
+	padding: .76rem;
+	border-radius: 2rem;
+	border: .3rem gray;
+	background-color: #4CAF40;
+	font-family: 'Roboto';
+	text-decoration: none;
+	transition: .1s ease;
+	/*margin-left: 50%;
+	margin-right: 50%;*/
+	text-align: center;
+}
+#canvas {
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#goBack:hover {
+	border: .3rem black;
+	color: lightgray;
+}
