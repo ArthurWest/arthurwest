@@ -4,8 +4,11 @@ function File() {
 	document.getElementById('upload').click()
 }
 function handleFile(file) {
-	const img = document.getElementById('img')
+	const img = document.createElement("img"); 
 	img.src = window.URL.createObjectURL(file);
+	img.style.display = 'none';
+	img.setAttribute("id", "img");
+	document.body.appendChild(img)
 	img.onload = function() {
         window.URL.revokeObjectURL(this.src);
         handleInputs()
@@ -14,8 +17,10 @@ function handleFile(file) {
 }
 function urlGo() {
 	const src = document.getElementById('url').value
-	const img = document.getElementById('img')
+	const img = document.createElement("img"); 
+	img.style.display = 'none';
 	img.src = src;
+	img.setAttribute("id", "img");
 	img.onload = function() {
 		handleInputs()
 	}
@@ -35,7 +40,10 @@ function handleInputs() {
 	fact.title = document.getElementById('title').value
 	fact.text = document.getElementById('text').value
 	fact.image = document.getElementById('img')
+
+	console.log(fact)
 	createFact(fact)
+	document.body.removeChild(document.getElementById('img'))
 }
 //Canvas stuff
 const canvas = document.getElementById('canvas')
@@ -61,7 +69,7 @@ function createFact(fact) {
 		fact.image.height -= 0.1
 	}
 	if (true) {
-		ctx.drawImage(fact.image, (canvas.width - fact.image.width)/2, (canvas.height - fact.image.height)/2, fact.image.width, fact.image.height)
+		ctx.drawImage(fact.image, (canvas.width - fact.image.width)/2, (canvas.height - fact.image.height)/10, fact.image.width, fact.image.height)
 	}
 
 	//Drawing dark parts
